@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #E8E1D9,#687980);
+    background-image: -webkit-linear-gradient(135deg, #E8E1D9,#687980);                    ;
+}
+
+#topContainer{
+    border: .09rem solid rgb(111, 158, 233);
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px gray;
+    padding: 1rem;
+    width: 30rem;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec4fc 100%);
+}
+h1{
+    padding-left: 1rem;
+    letter-spacing: .1rem;
+}
+#searchDiv{
+    padding-top: .5rem;
+    padding-left: 2rem;
+}
+#para1{
+    font-size: 1.3rem;
+}
+#userInput{
+    display: flex;
+    gap: 2rem;
+}
+#searchBar{
+    height: 2.2rem;
+    width: 15rem;
+    border-radius: 10px;
+    border: 0cm;
+    padding-left: .5rem;
+    font-size: 16px;
+    letter-spacing: .1rem;
+}
+#searchButton{
+    height: 2.1rem;
+    width: 6rem;
+    border-radius: 10px;
+    border: .1rem solid rgb(133, 131, 131);
+    font-size: 15px;
+    letter-spacing: .1rem;
+    background-color: rgb(64, 63, 63);
+    color: white;
+    transition: all 100ms linear;
+}
+#searchButton:hover{
+    scale: 104%;
+    background-color: #6f7272;
+}
+
+#statsDiv{
+    display: none;
+    margin-top: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.statsContainer{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 7rem;
+    border: 4px solid #2485f3;
+    border-radius: 50%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 500;
+    color: white;
+    background: conic-gradient( #1fd1f9, #348af3 var(--progress-degree, 0%), #1fd1f9, #1a98ff 0%);
+    /* background-image: -webkit-linear-gradient(90deg,  #1fd1f9, #b621fe); */
+}
+
+#stats-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 10px;
+    margin: 1.5rem 0.5rem;
+}
+
+.statsCard .card{
+    border: .5px solid rgb(112, 161, 205);
+    border-radius: 10px;
+    background-color: rgb(116, 187, 245);
+    padding: 1px 1rem;
+    text-align: center;
+
+
+}
+.statsCard .card p{
+    font-weight: 700;
+}
+
+@keyframes statementMovement {
+    0% {
+        opacity: 0;
+        transform: scale(0); /* Smaller size and transparent */
+    }
+    50% {
+        opacity: 0.5;
+     /* Slight zoom in and fully visible */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#statement{
+    position: relative;
+    text-align: center;
+    animation-name: statementMovement;
+    animation-duration: 5000ms;
+    animation-timing-function:ease-in-out;
+    /* animation-delay: 5s; */
+    animation-iteration-count: 1;
+    /* animation-fill-mode: both; */
+}
+
+
+
